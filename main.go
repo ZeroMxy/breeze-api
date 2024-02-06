@@ -2,7 +2,6 @@ package main
 
 import (
 	"breeze-api/config"
-	"breeze-api/internal/router"
 	"breeze-api/pkg/db"
 	"strconv"
 
@@ -35,9 +34,6 @@ func main() {
 
 	// 根目录
 	app.Static("/", "./web")
-
-	// 注册路由
-	router.AdminRouter(app)
 
 	// 恢复
 	app.Use(recover.New())
