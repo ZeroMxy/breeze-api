@@ -22,6 +22,3 @@ go mod vendor
 # 启动服务
 go run main.go
 ```
-
-### API文档
-[API文档](https://github.com/ZeroMxy/breeze-api/blob/main/document/api.md)
